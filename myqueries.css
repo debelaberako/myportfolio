@@ -81,6 +81,10 @@
     grid-template-columns: 1fr;
   }
 
+  .contact-info-container--email {
+    grid-column: span 1;
+  }
+
   .contact-info-container {
     flex-wrap: wrap;
   }

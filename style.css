@@ -700,7 +700,7 @@ article p {
 
 .contact-info-upper-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
   gap: 1rem;
   width: 100%;
   border-radius: var(--radius-xl);
@@ -714,14 +714,26 @@ article p {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.75rem;
+  padding: 0.75rem 1rem;
   border-radius: var(--radius-lg);
   background: var(--primary-color-2);
   border: 1px solid var(--container-border);
+  min-width: 0;
+}
+
+.contact-info-container--email {
+  grid-column: span 2;
 }
 
 .contact-info-container p {
   font-size: 0.95rem;
+  min-width: 0;
+  line-height: 1.4;
+}
+
+.contact-info-container a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .contact-icon {
