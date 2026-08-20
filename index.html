@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Debela Berako — Software Engineer specializing in full-stack web development, React.js, Node.js, and AI-driven solutions."
+    />
+    <title>Debela Berako | Software Engineer</title>
+    <link rel="icon" href="image/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="myqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Debela Berako</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button
+              id="modeToggle"
+              class="theme-toggle"
+              type="button"
+              aria-label="Toggle color theme"
+            >
+              <svg
+                class="theme-icon theme-icon-sun"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="4.5" />
+                <line x1="12" y1="2" x2="12" y2="5" />
+                <line x1="12" y1="19" x2="12" y2="22" />
+                <line x1="2" y1="12" x2="5" y2="12" />
+                <line x1="19" y1="12" x2="22" y2="12" />
+                <line x1="4.2" y1="4.2" x2="6.3" y2="6.3" />
+                <line x1="17.7" y1="17.7" x2="19.8" y2="19.8" />
+                <line x1="4.2" y1="19.8" x2="6.3" y2="17.7" />
+                <line x1="17.7" y1="6.3" x2="19.8" y2="4.2" />
+              </svg>
+              <svg
+                class="theme-icon theme-icon-moon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5z" />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Debela Berako</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <button
+              id="modeToggle2"
+              class="theme-toggle"
+              type="button"
+              aria-label="Toggle color theme"
+            >
+              <svg
+                class="theme-icon theme-icon-sun"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="4.5" />
+                <line x1="12" y1="2" x2="12" y2="5" />
+                <line x1="12" y1="19" x2="12" y2="22" />
+                <line x1="2" y1="12" x2="5" y2="12" />
+                <line x1="19" y1="12" x2="22" y2="12" />
+                <line x1="4.2" y1="4.2" x2="6.3" y2="6.3" />
+                <line x1="17.7" y1="17.7" x2="19.8" y2="19.8" />
+                <line x1="4.2" y1="19.8" x2="6.3" y2="17.7" />
+                <line x1="17.7" y1="6.3" x2="19.8" y2="4.2" />
+              </svg>
+              <svg
+                class="theme-icon theme-icon-moon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5z" />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img
+            src="image/debela.jpg"
+            alt="Portrait of Debela Berako"
+            class="profile-pic"
+          />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Debela Berako</h1>
+          <p class="section__text__p2">Software Engineer</p>
+          <p class="section__text__p3">
+            Building scalable web applications and AI-driven solutions with
+            React.js, Node.js, and modern engineering practices.
+          </p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-1"
+              onclick="window.open('myCV.pdf')"
+            >
+              Download CV
+            </button>
+            <button
+              class="btn btn-color-2"
+              onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+            >
+              Contact Me
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="image/linkedin.png"
+              src-light="image/linkedin.png"
+              src-dark="image/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon linkedin-icon"
+              onclick="window.open('https://www.linkedin.com/in/debelaberako/','_blank')"
+            />
+            <img
+              src="image/github-light.png"
+              src-light="image/github-light.png"
+              src-dark="image/github-dark.png"
+              alt="My GitHub profile"
+              class="icon github-icon"
+              onclick="window.open('https://github.com/debelaberako','_blank')"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="image/education.png"
+                alt="Experience icon"
+                class="icon about-card-icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                Full-Stack Web Developer<br />
+                Freelance / Project-Based<br />
+                2021 – Present
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="image/education.png"
+                alt="Education icon"
+                class="icon about-card-icon"
+              />
+              <h3>Education</h3>
+              <p>
+                BSc in Software Engineering<br />
+                Adama Science and Technology University (ASTU)<br />
+                Major CGPA: 3.46 (2026)
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Software Engineer with experience building scalable web
+              applications and AI-driven solutions. Skilled in React.js,
+              Node.js, JavaScript, Python, REST APIs, and modern software
+              engineering practices.
+            </p>
+            <p>
+              Experienced in full-stack development, AI training, and
+              problem-solving, with a passion for delivering impactful
+              technology solutions. Based in Adama, Ethiopia.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="work-experience-card details-container">
+            <h2 class="experience-sub-title">Work Experience</h2>
+            <div class="work-role">
+              <div class="work-role-header">
+                <h3>Full-Stack Web Developer</h3>
+                <span class="work-period">2021 – Present</span>
+              </div>
+              <p class="work-company">Freelance / Project-Based</p>
+              <ul class="work-list">
+                <li>
+                  Developed responsive web applications using React.js, Node.js,
+                  Express.js, and JavaScript.
+                </li>
+                <li>
+                  Built reusable UI components and integrated REST APIs.
+                </li>
+                <li>
+                  Improved performance, responsiveness, and user experience.
+                </li>
+                <li>
+                  Collaborated on backend integration, testing, and deployment
+                  using Git/GitHub.
+                </li>
+                <li>
+                  Contributed to AI training and evaluation projects, including
+                  data annotation, quality assessment, and NLP-based model
+                  development.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about-containers skills-grid">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frontend</h2>
+              <div class="article-container">
+                <article>
+                  <div>
+                    <h3>React.js</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>JavaScript (ES6+)</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>HTML5</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>CSS3</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>Responsive Design</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>REST APIs</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="details-container">
+              <h2 class="experience-sub-title">Backend &amp; Languages</h2>
+              <div class="article-container">
+                <article>
+                  <div>
+                    <h3>Node.js</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>Express.js</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>Python</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>C++</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>Java</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="details-container">
+              <h2 class="experience-sub-title">Tools &amp; Languages Spoken</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="image/github-light.png"
+                    src-light="image/github-light.png"
+                    src-dark="image/github-dark.png"
+                    alt="Git icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git &amp; GitHub</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>VS Code</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>npm / yarn</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>English</h3>
+                    <p>Fluent</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>Amharic</h3>
+                    <p>Fluent</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>Afaan Oromo</h3>
+                    <p>Native</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers projects-grid">
+            <div class="details-container color-container">
+              <img
+                src="image/skillswap.avif"
+                alt="SkillSwap project preview"
+                class="project-img"
+              />
+              <h2 class="experience-sub-title project-title">SkillSwap</h2>
+              <p class="project-description">
+                Online microlearning platform with peer-to-peer learning,
+                responsive UI, API integration, and scalable frontend
+                architecture.
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://skill-swap-mauve-chi.vercel.app/','_blank')"
+                >
+                  Live Demo
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/debelaberako','_blank')"
+                >
+                  GitHub
+                </button>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <img
+                src="image/discover-adama.png"
+                alt="Discover Adama project preview"
+                class="project-img"
+              />
+              <h2 class="experience-sub-title project-title">Discover Adama</h2>
+              <p class="project-description">
+                Responsive city guide web application for discovering local
+                services and locations across Adama.
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/debelaberako','_blank')"
+                >
+                  GitHub
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="image/email.png"
+              src-light="image/email.png"
+              src-dark="image/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p>
+              <a href="mailto:debelaberako2@gmail.com">debelaberako2@gmail.com</a>
+            </p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="image/linkedin.png"
+              src-light="image/linkedin.png"
+              src-dark="image/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon linkedin-icon"
+              onclick="window.open('https://www.linkedin.com/in/debelaberako/','_blank')"
+            />
+            <p>
+              <a
+                href="https://www.linkedin.com/in/debelaberako/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="image/github-light.png"
+              src-light="image/github-light.png"
+              src-dark="image/github-dark.png"
+              alt="My GitHub profile"
+              class="icon github-icon"
+              onclick="window.open('https://github.com/debelaberako','_blank')"
+            />
+            <p>
+              <a
+                href="https://github.com/debelaberako"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </p>
+          </div>
+          <div class="contact-info-container">
+            <p class="contact-label">Phone</p>
+            <p><a href="tel:+251995752278">+251 995 752 278</a></p>
+          </div>
+          <div class="contact-info-container">
+            <p class="contact-label">Location</p>
+            <p>Adama, Ethiopia</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 Debela Berako. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

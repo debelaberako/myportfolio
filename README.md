@@ -1,16 +1,19 @@
-# Debela Berako's Portfolio Project
+# Debela Berako — Portfolio
 
-## About Me
-My name is Debela Berako, and I'm from Ethiopia. I have experience working with HTML, CSS, JavaScript, and Python.
+Live site: **https://debelaberako.github.io/myportfolio/**
 
-## Project Overview
-This portfolio project showcases some of the work I've done to develop my skills in web development and programming. The project includes the following:
+Software Engineer portfolio built with HTML, CSS, and JavaScript.
 
-1. **HTML/CSS/JavaScript Website**: A responsive website built using HTML, CSS, and JavaScript, highlighting my abilities in front-end web development.
-## Technologies Used
-The technologies and tools used in this project include:
+## Features
 
-- HTML
-- CSS
+- Responsive layout for desktop, tablet, and mobile
+- Light/dark theme toggle
+- Work experience, skills, projects, and contact sections
+- CV download
+
+## Technologies
+
+- HTML5
+- CSS3
 - JavaScript
-- Git and GitHub for version control and project hosting
+- GitHub Pages

@@ -846,7 +846,13 @@ footer p {
   animation: fadeInUp 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.9s both;
 }
 
-.reveal {
+.reveal,
+.reveal-scale {
+  opacity: 1;
+  transform: none;
+}
+
+.js-enabled .reveal:not(.is-visible) {
   opacity: 0;
   transform: translateY(28px);
   transition:
@@ -855,12 +861,12 @@ footer p {
   transition-delay: var(--reveal-delay, 0s);
 }
 
-.reveal.is-visible {
+.js-enabled .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-.reveal-scale {
+.js-enabled .reveal-scale:not(.is-visible) {
   opacity: 0;
   transform: scale(0.96);
   transition:
@@ -869,7 +875,7 @@ footer p {
   transition-delay: var(--reveal-delay, 0s);
 }
 
-.reveal-scale.is-visible {
+.js-enabled .reveal-scale.is-visible {
   opacity: 1;
   transform: scale(1);
 }
