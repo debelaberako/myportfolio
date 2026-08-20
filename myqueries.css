@@ -82,7 +82,7 @@
   }
 
   .contact-info-container--email {
-    grid-column: span 1;
+    grid-column: 1 / -1;
   }
 
   .contact-info-container {

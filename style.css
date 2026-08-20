@@ -722,7 +722,11 @@ article p {
 }
 
 .contact-info-container--email {
-  grid-column: span 2;
+  grid-column: 1 / -1;
+}
+
+.contact-info-container--email p {
+  font-size: 0.9rem;
 }
 
 .contact-info-container p {
